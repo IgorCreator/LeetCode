@@ -8,7 +8,6 @@ public class JewelsAndStonesTest {
 
     @Test
     public void testNumJewelsInStones() {
-        JewelsAndStones jewelsAndStones = new JewelsAndStones();
-        assertEquals(3, jewelsAndStones.numJewelsInStones("aA", "aAAbbbb"));
+        assertEquals(3, new JewelsAndStones().numJewelsInStones("aA", "aAAbbbb"));
     }
 }

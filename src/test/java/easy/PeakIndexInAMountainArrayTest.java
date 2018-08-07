@@ -12,5 +12,4 @@ public class PeakIndexInAMountainArrayTest {
         PeakIndexInAMountainArray aMountainArray = new PeakIndexInAMountainArray();
         assertEquals(2, aMountainArray.peakIndexInMountainArray(input));
     }
-
 }

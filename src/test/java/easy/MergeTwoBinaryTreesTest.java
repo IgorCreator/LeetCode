@@ -54,7 +54,7 @@ public class MergeTwoBinaryTreesTest {
     }
 
     @Test
-    public void judgeCircleTest() {
+    public void mergeTreesTest() {
         MergeTwoBinaryTrees aCase = new MergeTwoBinaryTrees();
         assertEquals(rez, aCase.mergeTrees(t1, t2));
         assertEquals(rez, aCase.mergeTreesNotMineDecision(t1, t2));

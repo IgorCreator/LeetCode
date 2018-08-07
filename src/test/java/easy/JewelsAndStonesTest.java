@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class JewelsAndStonesTest {
 
     @Test
-    public void testNumJewelsInStones() {
+    public void numJewelsInStonesTest() {
         assertEquals(3, new JewelsAndStones().numJewelsInStones("aA", "aAAbbbb"));
     }
 }

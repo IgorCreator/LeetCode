@@ -2,8 +2,6 @@ package easy;
 
 import java.util.*;
 
-import static java.lang.Integer.min;
-
 public class ArrayPartitionI {
 
     public int arrayPairSum(int[] nums) {

@@ -1,4 +1,4 @@
-package easy.hackaton;
+package hackaton;
 
 /*
  * Amazon question 2 Intern Fall 2014-2015

@@ -1,4 +1,4 @@
-package easy.hackaton;
+package hackaton;
 
 import java.io.*;
 import java.util.ArrayList;

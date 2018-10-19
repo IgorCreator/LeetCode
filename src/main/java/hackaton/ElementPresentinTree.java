@@ -1,10 +1,7 @@
-package easy.hackaton;
+package hackaton;
 
-import java.io.*;
 import java.util.*;
-import java.util.regex.*;
-import java.text.*;
-import java.math.*;
+
 public class ElementPresentinTree {
 
 

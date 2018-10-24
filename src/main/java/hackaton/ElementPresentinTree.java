@@ -2,8 +2,18 @@ package hackaton;
 
 import java.util.*;
 
-public class ElementPresentinTree {
+/*
+*
+You are provided a binary search tree with integers.
+Each node has three primary members: an Integer (which it holds),
+a pointer to its left child, and a pointer to its right child.
+A function stub is provided in multiple languages.  
+You need to complete so this function so that it will search for the presence
+of a specified integer in this tree. If the element (val) is found, return 1. Otherwise return 0. 
+*
+* */
 
+public class ElementPresentinTree {
 
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);

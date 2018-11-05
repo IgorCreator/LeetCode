@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AmazonTask2 {
+public class NearestXsteakHouses {
 
     static List<List<Integer>> nearestXsteakHouses(int totalSteakhouses,
                                             List<List<Integer>> allLocations,

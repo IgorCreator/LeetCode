@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class ReverseInteger {
 
-    char[] charArray;
-    boolean negative;
+    private char[] charArray;
+    private boolean negative;
 
     //How it should be solved
     public int reverse(int x) {
@@ -25,7 +25,7 @@ public class ReverseInteger {
         String inputStr = String.valueOf(input);
         reverse(inputStr);
         checkOnFirstMinus();
-        checkOnFirstZero(0);
+        checkOnFirstZero();
         return charArrayToInt();
     }
 
@@ -71,14 +71,8 @@ public class ReverseInteger {
         }
     }
 
-    private void moveMinusInfront(int lastChar) {
-        char temp = charArray[0];
-        charArray[0]=charArray[lastChar];
-        charArray[lastChar] = temp;
-    }
-
-    private void checkOnFirstZero(int index) {
-        if (charArray[index] == '0') {
+    private void checkOnFirstZero() {
+        if (charArray[0] == '0') {
             deleteChar(charArray, 1,charArray.length);
         }
     }

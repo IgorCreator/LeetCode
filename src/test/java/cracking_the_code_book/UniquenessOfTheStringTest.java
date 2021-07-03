@@ -1,4 +1,4 @@
-package easy;
+package cracking_the_code_book;
 
 import java.util.Arrays;
 import java.util.HashSet;

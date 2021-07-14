@@ -1,4 +1,6 @@
-package cracking_the_code_book;
+package cracking_the_code_book.linked_list;
+
+import cracking_the_code_book.linked_list.LinkedListNode;
 
 public class ReturnKthToLast {
 

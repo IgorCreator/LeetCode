@@ -1,7 +1,8 @@
-package cracking_the_code_book;
+package cracking_the_code_book.linked_list;
+
+import cracking_the_code_book.linked_list.LinkedListNode;
 
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.Set;
 
 public class RemoveDuplicateFromLindedList {

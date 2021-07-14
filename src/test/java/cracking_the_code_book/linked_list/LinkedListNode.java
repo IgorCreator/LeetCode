@@ -1,4 +1,4 @@
-package cracking_the_code_book;
+package cracking_the_code_book.linked_list;
 
 public class LinkedListNode {
     public LinkedListNode next;

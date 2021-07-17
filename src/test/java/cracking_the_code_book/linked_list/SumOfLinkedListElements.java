@@ -2,8 +2,6 @@ package cracking_the_code_book.linked_list;
 
 import java.util.Stack;
 
-import static jdk.nashorn.internal.objects.ArrayBufferView.length;
-
 public class SumOfLinkedListElements {
 
     public static void main(String[] args) {
@@ -240,6 +238,15 @@ public class SumOfLinkedListElements {
             LinkedListNode result = insertBefore(sum.sum, sum.carry);
             return result;
         }
+    }
+
+    private int length(LinkedListNode l1) {
+        int res = 0;
+        while(l1 != null){
+            res++;
+            l1 = l1.next;
+        }
+        return res;
     }
 
     PartialSum addListsHelper(LinkedListNode l1, LinkedListNode l2) {

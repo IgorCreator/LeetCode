@@ -5,7 +5,7 @@ import java.util.*;
 public class StackOfPlates {
 
     public static void main(String[] args) {
-        StackPlates integerCustomStack = new StackPlates();
+        StackPlates integerCustomStack = new StackPlates(5);
         integerCustomStack.push(2);
         integerCustomStack.push(3);
         integerCustomStack.push(10);
@@ -27,12 +27,13 @@ public class StackOfPlates {
     // Last In, First out
     public static class StackPlates {
 
-        private final int MAX_STACK_OF_PLATES = 5;
+        private final int MAX_STACK_OF_PLATES;
         private final List<Stack<StackNode>> setOfStacks;
         private int size = 0;
         private StackNode head;
 
-        public StackPlates() {
+        public StackPlates(int size) {
+            MAX_STACK_OF_PLATES = size;
             setOfStacks = new ArrayList<>();
             setOfStacks.add(new Stack<>());
         }

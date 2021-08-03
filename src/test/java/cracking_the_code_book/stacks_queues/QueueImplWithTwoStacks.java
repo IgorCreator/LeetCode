@@ -45,4 +45,16 @@ public class QueueImplWithTwoStacks<T> {
 
     }
 
+    public static void main(String[] args) {
+        QueueImplWithTwoStacks<Integer> queueImplWithTwoStacks = new QueueImplWithTwoStacks<>();
+        queueImplWithTwoStacks.add(2);
+        queueImplWithTwoStacks.add(5);
+        queueImplWithTwoStacks.add(1);
+        queueImplWithTwoStacks.add(10);
+        queueImplWithTwoStacks.remove();
+        queueImplWithTwoStacks.add(20);
+        queueImplWithTwoStacks.remove();
+
+    }
+
 }

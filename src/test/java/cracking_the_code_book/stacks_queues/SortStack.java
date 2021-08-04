@@ -3,29 +3,29 @@ package cracking_the_code_book.stacks_queues;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class SortStacked<T> {
+class SortStack<T> {
 
     private Stack<T> tempStack;
-     private StackNode<T> head;
+    private StackNode<T> head;
     int size;
 
     private static class StackNode<T> {
         private final T data;
         private final StackNode<T> next;
 
-        StackNode(T data){
+        StackNode(T data) {
             this.data = data;
             this.next = null;
         }
 
-        StackNode(T data, StackNode<T> next){
+        StackNode(T data, StackNode<T> next) {
             this.data = data;
             this.next = next;
         }
     }
 
-    public T pop(){
-        if(head == null) throw new EmptyStackException();
+    public T pop() {
+        if (head == null) throw new EmptyStackException();
 
         T data = head.data;
         head = head.next;
@@ -34,7 +34,7 @@ public class SortStacked<T> {
     }
 
 
-    public void push(T newItem){
+    public void push(T newItem) {
         head = new StackNode<>(newItem, head);
         sort();
         size++;
@@ -59,22 +59,22 @@ public class SortStacked<T> {
     }
 
 
-    public T peek(){
-        if(head == null) throw new EmptyStackException();
+    public T peek() {
+        if (head == null) throw new EmptyStackException();
         return head.data;
     }
 
-    public int stackSize(){
+    public int stackSize() {
         return size;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return head == null;
     }
 
-    public void print(){
+    public void print() {
         StackNode<T> cur = head;
-        while(cur != null){
+        while (cur != null) {
             System.out.print(cur.data);
             if (cur.next != null)
                 System.out.print(" -> ");
@@ -84,4 +84,3 @@ public class SortStacked<T> {
         System.out.println();
     }
 }
-
